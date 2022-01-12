@@ -1,0 +1,65 @@
+table,
+td {
+  border: 1px solid black;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+}
+
+button {
+  outline: none;
+  border: 4px solid rgb(70, 0, 128);
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: none;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  background: rgb(222, 233, 222);
+  color: white;
+}
+
+.winner {
+  min-height: 10xvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+}
+
+.play-area {
+  display: grid;
+  width: 300px;
+  height: 300px;
+  grid-template-columns: auto auto auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  border: 3px solid black;
+  transition: background 0.2s ease-in-out;
+}
+
+.cell:hover {
+  cursor: pointer;
+  background: #9028e6;
+}
+
+.win {
+  color: green;
+}
+
+.tie {
+  color: rgb(228, 190, 22);
+}
